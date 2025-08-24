@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+--bg: #0f172a; /* slate-900 */
+--card: #111827; /* gray-900 */
+--accent: #22d3ee; /* cyan-400 */
+--text: #e5e7eb; /* gray-200 */
+--muted: #9ca3af; /* gray-400 */
+--radius: 1.25rem; /* 20px */
+}
+
+html{
+  font-size: 62.5%;
+ /* 1 rem=10px */
+}
+
+body{
+  width: 100vw;
+  background: #f3f4f6;
+}
+.parentcontainer{
+  width: 90%;
+  max-width: 1256px;
+  margin: 0 auto;
+  /* border: 3px solid black; */
+}
+
+.childcontainer1{
+  width: 90%;
+  margin: 2rem auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  row-gap: 0.8rem;
+  column-gap: 0.8rem;
+/* border: 3px solid black; */
+}
+
+.rock,.paper,.scissors{
+
+  height: 25rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rock:hover,.paper:hover ,.scissors:hover  {
+transform: scale(1.05);
+box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.imgs1{
+ width: 15rem;
+}
+.txt1{
+  font-size: 2rem;
+}
+
+.childcontainer2{
+  width: 90%;
+  margin: 2rem auto;
+  padding: 1rem;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.message1{
+  margin: 1rem;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.option,.scoreboard{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  font-size: 1.5rem;
+}
+button{
+  display: inline-block;
+  margin: 2rem;
+  padding: 1rem 2rem;
+  border: 1px solid #23467A;
+  border-radius: 15px;
+  background-color:#23467A;
+  color: #d4d8f0;
+}
+
+    /* Modal window */
+    .modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      z-index: 100;
+      width: 300px;
+      text-align: center;
+    }
+
+    /* Overlay (dark background) */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 50;
+    }
+
+    .finaltxt{
+      font-size: 1.6rem;
+    }
+    /* Hidden class */
+    .hidden {
+      display: none;
+    }
