@@ -88,7 +88,18 @@ document.querySelector('button').addEventListener('click',function(){
   computerScore = 0;
   document.querySelector('.player-score').textContent = 0;
   document.querySelector('.computer-score').textContent = 0;
-})  
+})  ;
+
+document.querySelector('.close-modal').addEventListener('click',function(){
+   document.querySelector('.choice1').textContent='?';
+   document.querySelector('.choice2').textContent='?';
+   document.querySelector('.message').textContent='Start the game...';
+     playerScore = 0;
+  computerScore = 0;
+  document.querySelector('.player-score').textContent = 0;
+  document.querySelector('.computer-score').textContent = 0;
+  document.querySelector('.modal').classList.add('hidden');
+})  ;
 
 
 
